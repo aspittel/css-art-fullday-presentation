@@ -98,9 +98,6 @@ body {
     letter-spacing: 0px;
 }
 
-img {
-    margin-left:30%;
-}
 
 .letter {
     font-weight: 800;
@@ -229,9 +226,9 @@ small {
     font-size: 0.4em;
 }
 
-img {
+/* img {
     width: 300px
-}
+} */
 
 .active {
     opacity: 1;

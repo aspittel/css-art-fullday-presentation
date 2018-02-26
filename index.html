@@ -133,15 +133,26 @@
       Today, we will be using an HTML tag called a div. These tags are special -- they just specify a grouping of elements or a space to style -- they don't have any default behaviors other than having a new line after them.
     </div>
 
-    <div id="" class="step" data-rel-x="0" data-rel-y="1000">
+    <div id="syntax" class="step" data-rel-x="0" data-rel-y="1000">
+      <div class="slide-header">
+        <rainbow-text text="SYNTAX" font-size="75"></rainbow-text>
+      </div>
+      <img src="https://mdn.mozillademos.org/files/9461/css-declaration-small.png"></img>
+    </div>
+
+    <div id="positioning" class="step" data-rel-x="0" data-rel-y="1000">
       <div class="slide-header">
         <rainbow-text text="POSITIONING" font-size="75"></rainbow-text>
       </div>
       <p>
-        <b>Absolute positioning</b>: We can position our divs on the page wherever we want using absolute positioning! The absolutely positioned divs ignore each other, so they can overlap. We will be using absolute positioning for most of our art!
+        Elements are positioned using the top, bottom, left, and right properties. These properties don't work until the position property is set! There are a few different options for positioning, but we will use two today: absolute and relative.
+      </p>
+
+      <p>
+        <b>Absolute positioning</b>: We can position our divs on the page relative to their parent elements using absolute positioning! The "sibling" absolutely positioned divs ignore each other, so they can overlap. We will be using absolute positioning for most of our art!
       </p>
       <p>
-        <b>Relative positioning</b>: We can position our divs on the page relative to the other elements we have on our page.
+        <b>Relative positioning</b>: We can position our divs on the page relative to that div's default position using relative positioning. Remember, divs by default will stack on top of one another!
       </p>
       <p><a href="https://codepen.io/aspittel/pen/BYxvOX?editors=1100">Demo</a></p>
       
@@ -151,16 +162,21 @@
       <div class="slide-header">
         <rainbow-text text="SHAPES" font-size="75"></rainbow-text>
       </div>
-      As we just saw, we can easily create squares with css, just by setting the width, height, and background-color attributes. To make that square into a circle, just add a border-radius of 100%! That will round the corners of the shape perfectly. Triangles, and other shapes get a little bit more tricky: I use <a href="https://bennettfeely.com/clippy/">Clippy</a> and to visually edit those shapes using clip paths!
+      As we just saw, we can easily create squares with css, just by setting the width, height, and background-color attributes. To make that square into a circle, just add a border-radius of 50%! That will round the corners of the shape perfectly. Triangles, and other shapes get a little bit more tricky: I use <a href="https://bennettfeely.com/clippy/">Clippy</a> and to visually edit those shapes using clip paths!
       <p><a href="https://codepen.io/aspittel/pen/zRLvaQ?editors=0100">Demo</a></p>
     </div>
   
-      <div id="live-code" class="step" data-rel-x="0" data-rel-y="1000">
+    <div id="live-code" class="step" data-rel-x="0" data-rel-y="1000">
       <div class="slide-header">
         <rainbow-text text="LIVE CODE" font-size="75"></rainbow-text>
       </div>
-      The most important thing to do is to identify the shapes in the image!
       <img src="./images/house.png">
+    </div>
+
+    <div id="live-code-2" class="step" data-rel-x="0" data-rel-y="1000">
+      <div class="slide-header">
+        <rainbow-text text="LIVE CODE" font-size="75"></rainbow-text>
+      </div>
       <p>Follow along!</p> 
       <p><a href="https://codepen.io/aspittel/pen/jZKpdQ?editors=1100">Completed Project</a></p>
     </div>
