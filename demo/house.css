@@ -59,6 +59,7 @@ body {
   height: 20px;
   width: 80%;
   left: 10%;
+  z-index: 1;
   background-color: #979797;
 }
 
@@ -104,7 +105,7 @@ body {
   width: 140%;
   height: 50%;
   top: -50%;
-  z-index: -1;
+  /* z-index: -1; */
   background-color: #A25AE1;
   position: relative;
   -webkit-clip-path: polygon(20% 0%, 90% 0, 100% 100%, 0% 100%);
@@ -127,7 +128,7 @@ body {
   position: absolute;
   background-color: #96DB98;
   border-radius: 50%;
-  z-index: 0;
+  z-index: 1;
 }
 
 .trunk {
@@ -137,7 +138,7 @@ body {
   position: absolute;
   left: 65px;
   top: 140px;
-  z-index: -1;
+  z-index: 0;
 }
 
 .outline {
