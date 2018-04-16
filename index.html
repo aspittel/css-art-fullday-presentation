@@ -7,6 +7,9 @@
   <meta name="description" content="2D navigation demo" />
   <meta name="author" content="Henrik Ingo" />
   <link href="./css/presentation.css" rel="stylesheet" />
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 </head>
 
 <body class="impress-not-supported">
@@ -26,10 +29,64 @@
     <div class="step center first-slide" id="intro" data-scale="2" data-x="-500" data-y="-500">
       <div class="name">
         <rainbow-text text="LEARNING  CSS  THROUGH  CREATING  ART" font-size="100"></rainbow-text>
-        <div class="intro">
-          by Ali Spittel
-        </div>
+        <div class="intro">by Ali Spittel</div>
       </div>
+    </div>
+
+    <div class="step" id="bio" data-scale="2" data-x="1000" data-y="1000">
+      <div class="slide-header">
+        <rainbow-text text="Hi! I'm Ali" font-size="50"></rainbow-text>
+      </div>  
+      <ul>
+        <li>Originally from New Hampshire, live in DC now</li>
+        <li>I am one of the lead instructors at General Assembly (a coding bootcamp) where I teach the web development immersive.</li>
+        <li>Before that, I was a software engineer at a startup.</li>
+        <li>I rock climb and do crossfit.</li>
+        <li>I really like trashy TV shows; the worse the better.</li>
+      </ul>
+      <div class="slide-header">
+        <rainbow-text text="Who are you?" font-size="50"></rainbow-text>
+      </div>  
+    </div>
+
+    <div class="step" id="road-map" data-scale="2" data-rel-x="2000" data-rel-y="2000">
+      <div class="slide-header">
+        <rainbow-text text="Road map" font-size="50"></rainbow-text>
+      </div>  
+      <ul>
+        <li>Discuss CSS art and look at how to make it.</li>
+        <li>Use a design software to create our art.</li>
+        <li>Use CSS selectors and attributes to create CSS art.</li>
+        <li>Use CSS grid to create grids in CSS.</li>
+        <li>Implement CSS animations using keyframes and transitions.</li>
+      </ul>
+      <div class="slide-header">
+        <rainbow-text text="What we will build" font-size="50"></rainbow-text>
+      </div>
+      <ul>
+        <li>A piece of CSS art that uses colors, shapes, and positioning.</li>
+        <li>A piece of CSS art using CSS grid.</li>
+        <li>An animation built in CSS.</li>
+      </ul>
+    </div>
+
+    <div id="what-is-css" class="step" data-rel-x="2000" data-rel-y="1000">
+      <div class="slide-header">
+        <rainbow-text text="WHAT IS CSS?" font-size="50"></rainbow-text>
+      </div>
+      <p>
+        CSS is used to declare styling on webpages. Pretty much every website uses it!
+      </p>
+      <p>
+        Styles are applied in a cascading manner -- the most specific styles will override the less specific ones!
+      </p>
+      <div class="slide-header">
+        <rainbow-text text="WHAT IS HTML?" font-size="50"></rainbow-text>
+      </div>
+      <p>
+        HTML defines the structure and content of our website. HTML tags have different meanings. For example a
+        <b>h1</b> tag defines a header. We will attach our CSS code to HTML tags using selectors.
+      </p>
     </div>
 
     <div id="example-singlediv-grace-hopper" class="step" data-rel-x="2000" data-rel-y="1000">
@@ -89,38 +146,30 @@
       <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
     </div>
 
-    <div id="what-is-css" class="step" data-rel-x="2000" data-rel-y="1000">
+    <div id="html-syntax" class="step" data-rel-x="0" data-rel-y="1000">
       <div class="slide-header">
-        <rainbow-text text="WHAT IS CSS?" font-size="50"></rainbow-text>
+        <rainbow-text text="HTML SYNTAX" font-size="75"></rainbow-text>
       </div>
-      <p>
-        CSS is used to declare styling on webpages. Pretty much every website uses it!
-      </p>
-      <p>
-        Styles are applied in a cascading manner -- the most specific styles will override the less specific ones!
-      </p>
-      <div class="slide-header">
-        <rainbow-text text="WHAT IS HTML?" font-size="50"></rainbow-text>
+      <div class="img-container">
+        <img src="https://mdn.mozillademos.org/files/9347/grumpy-cat-small.png"></img>
       </div>
-      <p>
-        HTML defines the structure and content of our website. HTML tags have different meanings. For example a
-        <b>h1</b> tag defines a header. We will attach our CSS code to HTML tags using selectors.
-      </p>
+      <div class="img-container">
+        <img src="https://mdn.mozillademos.org/files/9345/grumpy-cat-attribute-small.png">
+      </div>
     </div>
 
     <div id="syntax" class="step" data-rel-x="0" data-rel-y="1000">
       <div class="slide-header">
-        <rainbow-text text="SYNTAX" font-size="75"></rainbow-text>
+        <rainbow-text text="CSS SYNTAX" font-size="75"></rainbow-text>
       </div>
       <img src="https://mdn.mozillademos.org/files/9461/css-declaration-small.png"></img>
     </div>
-
+    
     <div id="specificity" class="step" data-rel-x="0" data-rel-y="1000">
       <div class="slide-header">
         <rainbow-text text="SELECTORS" font-size="75"></rainbow-text>
       </div>
-      When we use CSS, we are selecting content from our HTML code and adding styling to it. We apply CSS code at varying levels
-      of specificity. We will use:
+      When we use CSS, we are selecting content from our HTML code and adding styling to it. We apply CSS code at varying levels of specificity. We will use:
       <ul>
         <li>Elements - to select all HTML tags of a certain type. Selected with the tag's name.</li>
 
@@ -167,6 +216,13 @@
       <p><a href="https://codepen.io/aspittel/pen/zRLvaQ?editors=0100">Demo</a></p>
     </div>
   
+    <div id="box-model" class="step" data-rel-x="0" data-rel-y="1000">
+        <div class="slide-header">
+          <rainbow-text text="CSS Box Model" font-size="75"></rainbow-text>
+        </div>
+        <img src="https://www.washington.edu/accesscomputing/webd2/student/unit3/images/boxmodel.gif" style="width:90%;">
+    </div>
+
     <div id="live-code" class="step" data-rel-x="0" data-rel-y="1000">
       <div class="slide-header">
         <rainbow-text text="LIVE CODE" font-size="75"></rainbow-text>
@@ -182,7 +238,175 @@
       <p><a href="https://codepen.io/aspittel/pen/jZKpdQ?editors=1100">Completed Project</a></p>
     </div>
 
-    <div id="building-things" class="step" data-rel-x="1500" data-rel-y="1500">
+    <div id="design-software" class="step" data-rel-x="0" data-rel-y="1000">
+      <div class="slide-header">
+        <rainbow-text text="Design Software" font-size="75"></rainbow-text>
+      </div>
+      <a href="https://designer.io/">Download Gravit</a>
+    </div>
+
+    <div id="activity-one" class="step" data-rel-x="0" data-rel-y="1000">
+      <div class="slide-header">
+        <rainbow-text text="Activity: Build your own" font-size="50"></rainbow-text>
+      </div>
+      Build a piece of CSS art! Use a design software to outline what your artwork will look like.
+
+      Some Ideas:
+      <ul>
+        <li>An animal</li>
+        <li>A landscape</li>
+        <li>A self-portrait</li>
+        <li>A pretty pattern</li>
+      </ul>
+    </div>
+
+    <div id="grid" class="step" data-rel-x="0" data-rel-y="1000">
+      <div class="slide-header">
+        <rainbow-text text="CSS Grid" font-size="50"></rainbow-text>
+      </div>    
+      <p>CSS grid is a pretty new technology -- it just rolled out this year! It allows you to make grid-based layouts with rows and columns, which makes positioning much easier!</p>
+
+      <p>We will start with a grid container that contains grid items within it. We will also specify rows (horizontal) and columns (vertical) that our items will fit within.</p>
+
+    </div>
+  
+    <div id="grid-examples" class="step" data-rel-x="0" data-rel-y="1000">
+      <div class="slide-header">
+        <rainbow-text text="CSS Grid Art" font-size="50"></rainbow-text>
+      </div>
+      <p><a href="https://codepen.io/meowwwls/full/XEKzmP/">Geometric Poster</a></p>
+      <p><a href="https://labs.jensimmons.com/2017/03-004.html">Another Poster</a></p>
+    </div>
+  
+    <div id="grid-syntax" class="step" data-rel-x="0" data-rel-y="1000">
+      <div class="slide-header">
+        <rainbow-text text="Syntax" font-size="50"></rainbow-text>
+      </div>
+    
+      <pre>
+        <code class="css">
+          .grid-container {
+            /* Initialize grid */
+            display: grid;
+            /* The sizing of our rows*/
+            grid-template-rows: 1fr 10px 1fr;
+            /* The sizing of our columns */
+            grid-template-columns: 20px 1fr 2fr;
+            /* Add space between the rows and columns */
+            grid-gap: 10px;
+          }
+        </code>
+      </pre>
+
+      An <code>fr</code> is a <code>fraction</code>. For example, for the columns above there are 3 fractional units specified. The 1fr unit will take up one third of any remaining space, and the 2fr will take up the other two thirds.
+    </div>
+
+    <div id="grid-item" class="step" data-rel-x="0" data-rel-y="1000">
+      <div class="slide-header">
+        <rainbow-text text="Grid Item Syntax" font-size="50"></rainbow-text>
+      </div>
+    
+      <pre>
+        <code class="css">
+          .grid-item {
+            /* Initialize grid */
+            grid-row: 1;
+            grid-column: 2;
+
+            /* or... */
+            grid-row: 1 / span 2;
+            grid-column: 2 / span 1;
+          }
+        </code>
+      </pre>
+
+      <a href='https://codepen.io/aspittel/pen/LdKwmJ'>Demo</a>
+    </div>  
+
+
+    <div id="animations" class="step" data-rel-x="0" data-rel-y="1000">
+        <div class="slide-header">
+          <rainbow-text text="CSS Animations" font-size="50"></rainbow-text>
+        </div>    
+        <p>We can also animate our web pages using CSS! No JavaScript needed. There are two main ways we can add animations to our sites: transitions and keyframes. If you want to do something simple upon a user interaction, transitions are great. If you want to do something more complex or time based, you will want to use keyframes.
+        </p>
+      </div>
+    
+      <div id="transitions-code" class="step" data-rel-x="0" data-rel-y="1000">
+        <div class="slide-header">
+          <rainbow-text text="Transitions" font-size="50"></rainbow-text>
+        </div>
+        <pre>
+          <code class="css">
+            .item {
+              /*  transition: attribute time transition-timing, second-attribute time; */
+              background-color: red;
+              transition: background-color 2s ease-in;
+            }
+
+            /* hover is a pseudoclass we can use to change an attribute on hover */
+            .item:hover {
+              background-color: blue;
+            }
+          </code>
+        </pre>  
+       <a href="https://codepen.io/aspittel/pen/rdXBWZ">Demo</a>  
+      </div>
+  
+    <div id="keyframes-code" class="step" data-rel-x="0" data-rel-y="1000">
+      <div class="slide-header">
+        <rainbow-text text="Keyframes" font-size="50"></rainbow-text>
+      </div>
+
+      <pre>
+          <code class="css">
+            .item {
+              animation-name: keyframe-name;
+              animation-duration: 1s;
+              animation-iteration-count: infinite;
+              animation-direction: alternate;
+            }
+
+            @keyframes keyframe-name {
+              from {
+                attribute: start;
+              }
+
+              to {
+                attribute: end;
+              }
+            }
+          </code>
+        </pre>  
+        <a href="https://codepen.io/aspittel/pen/mxNbzO">Demo</a>
+    </div>
+
+    <div id="activity-animations" class="step" data-rel-x="0" data-rel-y="1000">
+      <div class="slide-header">
+        <rainbow-text text="Activity: Build an Animation" font-size="50"></rainbow-text>
+      </div>    
+      Create your own animation! You can add it to anything you've built today, or create something new! You can use a transition or a keyframe (or try both)!
+    </div>
+
+    <div id="sass" class="step" data-rel-x="0" data-rel-y="1000">
+      <div class="slide-header">
+        <rainbow-text text="SCSS" font-size="50"></rainbow-text>
+      </div>
+      <p>SCSS is a CSS preprocessor which adds additional functionality to CSS. The browser can't read it by default, so we have to transplile it to normal CSS, but it can make our code a lot cleaner!</p>
+
+      <p>It allows us to use variables, mixins, and loops within our CSS code!</p>
+
+      <p><a href="https://codepen.io/aspittel/pen/oqKvVb">Demo</a></p>
+    </div>
+  
+    <div id="closing" class="step centered" data-rel-x="0" data-rel-y="1000">
+        <div class="slide-header">
+          <rainbow-text text="... Any questions?" font-size="100"></rainbow-text>
+        </div>
+      </div>
+  
+
+    <div id="building-things" class="step" data-rel-x="0" data-rel-y="1000">
       <p>
         Those of us whose work is to write software are incredibly lucky. Building software is a guiltless pleasure because we get
         to use our creative energy to get things done. We have arranged our lives to have it both ways; we can enjoy the
@@ -214,18 +438,28 @@
     </div>
   
     <div id="keep-in-touch" class="step" data-rel-x="0" data-rel-y="1000">
-      <div class="slide-header">
-        <rainbow-text text="KEEP IN TOUCH!" font-size="75"></rainbow-text>
+        <div class="slide-header">
+          <rainbow-text text="KEEP IN TOUCH!" font-size="75"></rainbow-text>
+        </div>
+        <h2>
+          <i class="fab fa-twitter" style="color:#00aced;"></i> @aspittel
+        </h2>
+        <h2>
+          <i class="fab fa-linkedin" style="color:#007bb6;"></i> /in/aspittel
+        </h2>
+        <h2>
+          <i class="fas fa-link" style="color:pink;"></i> alispit.tel
+        </h2>
+        <h2>
+          <i class="fab fa-github"></i> aspittel
+        </h2>
       </div>
-      <p><a href="https://twitter.com/aspittel">Twitter</a></p>
-      <p><a href="https://www.linkedin.com/in/aspittel/">LinkedIn</a></p>
-      <p><a href="http://www.alispit.tel">Website</a></p>
-      <p><a href="http://github.com/aspittel">GitHub</a></p>
-    </div>  
-
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script type="text/javascript" src="./js/impress.js"></script>
     <script>
       impress().init()
+      hljs.initHighlightingOnLoad()
     </script>
     <script type="text/javascript" src="./js/rainbow-component.js"></script>
 </body>

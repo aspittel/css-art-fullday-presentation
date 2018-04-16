@@ -328,3 +328,16 @@ body.impress-mouse-timeout {
 .impress-enabled #impress                 { pointer-events: auto } */
 .impress-enabled #impress-toolbar         { pointer-events: auto }
 .impress-enabled #impress-console-button  { pointer-events: auto }
+
+ul {
+    text-align: left;
+}
+
+img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+code span {
+    font-size: 20px;
+}
